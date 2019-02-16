@@ -45,8 +45,6 @@ author:              Markus Ongyerth
 -- patches.
 maintainer:          ongy@ongy.net
 
-cabal-version:       >=1.10
-
 -- A copyright notice.
 -- copyright:
 
