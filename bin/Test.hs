@@ -21,7 +21,7 @@ printSink sink = do
     putStrLn . show $ map (\v -> v / base * 100) vol
 
 startLoop :: Context -> Sinkinfo -> IO ()
-startLoop cxt info = do 
+startLoop cxt info = do
     printSink info
     void $ subscribeEvents cxt [SubscriptionMaskSink] fun
     where fun :: ((SubscriptionEventFacility, SubscriptionEventType) -> Word32 -> IO ())

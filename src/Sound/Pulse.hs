@@ -61,4 +61,3 @@ pulseListM fun = Pulse $ \cxt f -> do
     var <- newMVar []
     let cb v = modifyMVar_ var $ return . (v:)
     fun cxt cb (f . reverse =<< takeMVar var)
-
